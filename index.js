@@ -1,4 +1,72 @@
+const express = require('express');
+const app = express();
+const port = process.env.PORT || 5000;
+const cors = require('cors');
 
+app.use(cors());
+app.use(express.json());
+
+app.get('/', (req, res)=>{
+    res.send('Leading Home Route for Ranjit');
+});
+
+app.listen(port, ()=>{
+    console.log(`Listening to port ${port} with Ranjit`);
+});
+
+/* 
+const express = require('express');
+const app = express();
+const port = process.env.PORT || 5000;
+
+const cors = require('cors');
+app.use(cors());
+app.use(express());
+
+app.get('/', (req, res)=>{
+    res.send('Home route done');
+});
+
+app.listen(port, ()=>{
+    console.log(`Listening to port ${port}`);
+});
+ */
+/*
+const express = require('express');
+const app = express();
+const port = process.env.port || 5000;
+
+const cors = require('cors');
+
+app.use(cors());
+app.use(express.json());
+
+app.get('/', (req, res)=>{
+    res.send('Testing Home rout app')
+});
+
+app.listen(port, ()=>{
+    console.log(`Listening to port ${port}`);
+});
+*/
+/* 
+const express = require('express');
+const app = express();
+const port = process.env.port || 5000;
+const cors = require('cors');
+
+app.use(cors());
+app.use(express.json());
+
+app.get('/', (req, res)=>{
+    res.send('server is ready for coding')
+});
+
+app.listen(port, ()=>{
+    console.log(`Listening to port ${port}`);
+});
+ */
+/* 
 const express = require('express');
 const app = express();
 const port = process.env.port || 5000;
@@ -13,6 +81,7 @@ app.get('/', (req, res)=>{
 app.listen(port, ()=>{
     console.log(`listening to port creatino at 6/7/2022 ${port}`);
 });
+ */
 
 /* 
 const express = require('express');
